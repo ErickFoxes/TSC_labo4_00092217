@@ -1,4 +1,4 @@
-enum lines {NOLINE,SINGLELINE,DOUBLELINE};
+	enum lines {NOLINE,SINGLELINE,DOUBLELINE};
 enum modes {NOMODE,INT_FLOAT,INT_INT_INT};
 enum parameters {ELEMENT_LENGTH,t,k,z,v,keletraesesta,a,s,n};
 enum sizes {NODES,ELEMENTS,DIRICHLET};
@@ -106,8 +106,7 @@ class mesh{
     public:
         void setParameters(float l,float T,float K,float Z, float V, float Keletraesesta,float A, float S, float N){
             parameters[ELEMENT_LENGTH]=l;
-            
-            parameters[ELEMENT_LENGTH]=T;
+            parameters[t]=T;
             parameters[k]=K;
             parameters[z]=Z;
             parameters[v]=V;
